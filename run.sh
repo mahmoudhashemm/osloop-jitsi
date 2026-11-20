@@ -1,7 +1,7 @@
 #!/bin/bash
 # OSLOOP Jitsi Meet quick install (JWT host sign-in + per-meeting password + auto lobby).
 # Usage: sudo bash run.sh DOMAIN PUBLIC_IP [FOLDER=/opt/jitsi] [HTTP_PORT=8000]
-# Example: curl -s https://raw.githubusercontent.com/mahmoudhashemm/osloop-jitsi/main/run.sh | sudo bash -s meet.example.com 203.0.113.10
+# Example: git clone --depth=1 git@github.com:mahmoudhashemm/osloop-jitsi.git /tmp/osloop-jitsi && sudo bash /tmp/osloop-jitsi/run.sh meet.example.com 203.0.113.10
 # Needs docker + docker compose + curl + openssl. HTTPS is NOT done here: point your reverse proxy
 # (nginx / cloudflared) at http://127.0.0.1:HTTP_PORT. Open UDP 10000 on the firewall (media).
 set -euo pipefail
