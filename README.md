@@ -4,6 +4,7 @@ Needs `docker`, `docker compose`, `curl`, `openssl`, and a server whose SSH key 
 
 ```bash
 git clone --depth=1 git@github.com:mahmoudhashemm/osloop-jitsi.git /tmp/osloop-jitsi && sudo bash /tmp/osloop-jitsi/run.sh meet.example.com 203.0.113.10
+
 ```
 
 Arguments: `DOMAIN` `PUBLIC_IP` [`FOLDER=/opt/jitsi`] [`HTTP_PORT=8000`]. Everything is installed under `FOLDER` (default `/opt/jitsi`).
